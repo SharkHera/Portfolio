@@ -5,13 +5,19 @@
     font-family: 'Poppins', sans-serif;
     color: white;
 }
-body{
+.presentation{
     background-image: url(./dark-blue-ocean-.png);
      
     background-position: center;
     background-size: cover;
-
 }
+body{
+    
+}
+    
+    
+
+
 .ecran {
     width: 100%;
     height: 100%;
@@ -21,12 +27,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-wrap: normal;
+    
 
 }
 
 .carte {
     width: 90%;
-    max-width: 440px;
+    
     color: rgb(3, 3, 3);
     text-align: center;
     padding: 50px 30px;
@@ -35,6 +43,7 @@ body{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
+    
 
 }
 
@@ -64,6 +73,7 @@ body{
 
 .reseau img:hover {
     background: rgb(107, 14, 116);
+    
 
 }
 
@@ -92,6 +102,46 @@ body{
     -ms-overflow-style: none;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav {
+    position: absolute;
+    width: 50vw;
+    
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #111;
+    border-left: 1px solid #cfcfcf;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    top: 50;
+    z-index: 1000;
+    border-radius: 90%;
+    padding: 10%;
+    display: none;
+    
+}
+nav.active {
+    transform: translate(0);
+    display: block;
+    
+}
+nav a {
+    font-family: Quicksand, sans-serif;
+    color: #f1f1f1;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
 
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ANIMATION TEXTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -279,8 +329,8 @@ body, input {
 input {
     align-items: flex-start;
     justify-content: left;
-    margin-left: 50px;
-    margin-top: 50px;
+    left: 50;
+    top: 50;
 
 }
 
@@ -290,7 +340,11 @@ label, .bubble {
 }
 label {
 	animation: float 4s ease-in-out infinite;
-    width: 200px;
+    
+    
+    left: 50;
+    top: 50;
+
 }
 .bubble, .bubble:before, .bubble:after  {
 	transition-duration: 0.2s;
@@ -339,7 +393,7 @@ label {
 	filter: drop-shadow(0.6em 0.6em 4px hsla(0,0%,0%,0.2));
 	top: 50%;
 	left: 50%;
-	width: ;
+	
 	height: 1.5em;
 	transform: translate3d(-50%,-50%,-1px);
 	z-index: -1;
@@ -420,4 +474,542 @@ label {
 	}
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!fin ANIMATION BOUTON MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Competence div!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.skills{
+    background: linear-gradient(to bottom, #0b7dad , #1d5074, #0a2867, rgb(1, 6, 48));
+    width: 100%;
+    height: 100%;
+    
+    background-position: center;
+    background-size: cover;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.skills h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 30px;
+    text-align: center;
+    
+  
+}
+
+
+
+.social-media-flex {
+    display: flex;
+  }
+  .social-media-flex-justify-content {
+    justify-content: center;
+  }
+  .social-media-flex-align-items {
+    align-items: center;
+  }
+  
+  .social-media-grid {
+    display: grid;
+  }
+  .social-media-grid-gap {
+    grid-gap: 0.5em;
+  }
+  
+  .main-container-social {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+  
+  .container-social {
+    grid-template-rows: repeat(2, 1.5em);
+    border-radius: 0.25em;
+    padding: 0.5em;
+    background-color: #000000;
+    box-shadow: 0 0 0.25em #262626;
+  }
+  
+  .social-links {
+    grid-template-columns: repeat(3, 2em);
+    grid-gap: 0.5em;
+    z-index: 100;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #bfbfbf;
+    transition: 0.3s all ease;
+    transition-timing-function: cubic-bezier(0, -0.5, 0, 0.5);
+  }
+  .social-link:hover {
+    color: #f2f2f2;
+    transform: translateY(-0.1em);
+    transition-timing-function: cubic-bezier(0.5, -1.5, 0.5, 1.5);
+  }
+  
+  .made {
+    display: block;
+    color: #f2f2f2;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  
+  
+  
+
+  
+  .container__progressbars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
+
+    width: 100%;
+    min-height: 80%;
+    background-color: #cebaba00;
+  }
+  
+  .progressbar {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 1em;
+    transform: rotate(-90deg);
+  }
+  
+  .progressbar__svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progressbar__svg-circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke: white;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  }
+  
+  .shadow-html {
+    filter: drop-shadow(0 0 5px #ff6633);
+  }
+  .shadow-css {
+    filter: drop-shadow(0 0 5px #33bbff);
+  }
+  .shadow-scss {
+    filter: drop-shadow(0 0 5px #ff33ff);
+  }
+  .shadow-js {
+    filter: drop-shadow(0 0 5px #ffff33);
+  }
+  .shadow-ts {
+    filter: drop-shadow(0 0 5px #3377ff);
+  }
+  .shadow-node {
+    filter: drop-shadow(0 0 5px #55ff33);
+  }
+  .shadow-react {
+    filter: drop-shadow(0 0 5px #33ffff);
+  }
+  .shadow-angular {
+    filter: drop-shadow(0 0 5px #ff3333);
+  }
+  .shadow-vue {
+    filter: drop-shadow(0 0 5px #33ff88);
+  }
+  
+  .circle-html {
+    -webkit-animation: anim_circle-html 1s ease-in-out forwards;
+            animation: anim_circle-html 1s ease-in-out forwards;
+  }
+  .circle-css {
+    -webkit-animation: anim_circle-css 1s ease-in-out forwards;
+            animation: anim_circle-css 1s ease-in-out forwards;
+  }
+  .circle-scss {
+    -webkit-animation: anim_circle-scss 1s ease-in-out forwards;
+            animation: anim_circle-scss 1s ease-in-out forwards;
+  }
+  .circle-js {
+    -webkit-animation: anim_circle-js 1s ease-in-out forwards;
+            animation: anim_circle-js 1s ease-in-out forwards;
+  }
+  .circle-ts {
+    -webkit-animation: anim_circle-ts 1s ease-in-out forwards;
+            animation: anim_circle-ts 1s ease-in-out forwards;
+  }
+  .circle-node {
+    -webkit-animation: anim_circle-node 1s ease-in-out forwards;
+            animation: anim_circle-node 1s ease-in-out forwards;
+  }
+  .circle-react {
+    -webkit-animation: anim_circle-react 1s ease-in-out forwards;
+            animation: anim_circle-react 1s ease-in-out forwards;
+  }
+  .circle-angular {
+    -webkit-animation: anim_circle-angular 1s ease-in-out forwards;
+            animation: anim_circle-angular 1s ease-in-out forwards;
+  }
+  .circle-vue {
+    -webkit-animation: anim_circle-vue 1s ease-in-out forwards;
+            animation: anim_circle-vue 1s ease-in-out forwards;
+  }
+  
+  .progressbar__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.25em 0.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  
+  @-webkit-keyframes anim_circle-html {
+    to {
+      stroke-dashoffset: 22;
+    }
+  }
+  
+  @keyframes anim_circle-html {
+    to {
+      stroke-dashoffset: 22;
+    }
+  }
+  @-webkit-keyframes anim_circle-css {
+    to {
+      stroke-dashoffset: 66;
+    }
+  }
+  @keyframes anim_circle-css {
+    to {
+      stroke-dashoffset: 66;
+    }
+  }
+  @-webkit-keyframes anim_circle-scss {
+    to {
+      stroke-dashoffset: 132;
+    }
+  }
+  @keyframes anim_circle-scss {
+    to {
+      stroke-dashoffset: 132;
+    }
+  }
+  @-webkit-keyframes anim_circle-js {
+    to {
+      stroke-dashoffset: 88;
+    }
+  }
+  @keyframes anim_circle-js {
+    to {
+      stroke-dashoffset: 88;
+    }
+  }
+  @-webkit-keyframes anim_circle-ts {
+    to {
+      stroke-dashoffset: 198;
+    }
+  }
+  @keyframes anim_circle-ts {
+    to {
+      stroke-dashoffset: 198;
+    }
+  }
+  @-webkit-keyframes anim_circle-node {
+    to {
+      stroke-dashoffset: 308;
+    }
+  }
+  @keyframes anim_circle-node {
+    to {
+      stroke-dashoffset: 308;
+    }
+  }
+  @-webkit-keyframes anim_circle-react {
+    to {
+      stroke-dashoffset: 387.2;
+    }
+  }
+  @keyframes anim_circle-react {
+    to {
+      stroke-dashoffset: 387.2;
+    }
+  }
+  @-webkit-keyframes anim_circle-angular {
+    to {
+      stroke-dashoffset: 418;
+    }
+  }
+  @keyframes anim_circle-angular {
+    to {
+      stroke-dashoffset: 418;
+    }
+  }
+  @-webkit-keyframes anim_circle-vue {
+    to {
+      stroke-dashoffset: 431.2;
+    }
+  }
+  @keyframes anim_circle-vue {
+    to {
+      stroke-dashoffset: 431.2;
+    }
+  }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CAROUSEL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.project{
+    background: url(./fond_marin.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+   
+}
+
+#carousel-wrapper {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 0;
+  }
+  #carousel-wrapper #menu {
+    height: 50%;
+    width: 90%;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    transition: all 0.6s ease-in-out;
+  }
+  #carousel-wrapper #menu #current-option {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate(-25%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #carousel-wrapper #menu #current-option #current-option-text1 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    width: 220px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #carousel-wrapper #menu #current-option #current-option-text1::before {
+    content: attr(data-next-text);
+    position: absolute;
+    transform: translate(0%, 380px);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #carousel-wrapper #menu #current-option #current-option-text1::after {
+    content: attr(data-previous-text);
+    position: absolute;
+    transform: translate(0%, -380px);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #carousel-wrapper #menu #current-option #current-option-text2 {
+    font-size: 0.8rem;
+    width: 220px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  #carousel-wrapper #menu #current-option #current-option-text2::before {
+    content: attr(data-next-text);
+    position: absolute;
+    transform: translate(0%, 380px);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  #carousel-wrapper #menu #current-option #current-option-text2::after {
+    content: attr(data-previous-text);
+    position: absolute;
+    transform: translate(0%, -380px);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  #carousel-wrapper #menu #previous-option {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    display: block;
+    cursor: pointer;
+    background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E%3C/svg%3E");
+    background-size: cover;
+    position: absolute;
+    transform: translate(310px, 50px);
+  }
+  #carousel-wrapper #menu #next-option {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    display: block;
+    cursor: pointer;
+    background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E%3C/svg%3E");
+    background-size: cover;
+    position: absolute;
+    transform: translate(310px, -50px) rotate(180deg);
+  }
+  #carousel-wrapper #image {
+    height: 280px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 101;
+    position: absolute;
+    transform: translate(140px, 0);
+  }
+  #carousel-wrapper.anim-next {
+    pointer-events: none;
+  }
+  #carousel-wrapper.anim-next #current-option-text1 {
+    animation: next-text 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-next #current-option-text2 {
+    animation: next-text 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-next #previous-option {
+    animation: next-top-arrow 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-next #next-option {
+    animation: next-bottom-arrow 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-next #image {
+    animation: next-image 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-previous {
+    pointer-events: none;
+  }
+  #carousel-wrapper.anim-previous #current-option-text1 {
+    animation: previous-text 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-previous #current-option-text2 {
+    animation: previous-text 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-previous #previous-option {
+    animation: previous-top-arrow 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-previous #next-option {
+    animation: previous-bottom-arrow 0.65s 0.085s;
+  }
+  #carousel-wrapper.anim-previous #image {
+    animation: previous-image 0.65s 0.085s;
+  }
+  
+  @keyframes previous-text {
+    50%, 55% {
+      transform: translate(0%, 390px);
+    }
+    to {
+      transform: translate(0%, 380px);
+    }
+  }
+  @keyframes previous-top-arrow {
+    50% {
+      transform: translate(310px, 53px);
+    }
+  }
+  @keyframes previous-bottom-arrow {
+    50% {
+      transform: translate(310px, -47px) rotate(180deg);
+    }
+  }
+  @keyframes previous-image {
+    0% {
+      transform: translate(140px, 0) scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: translate(140px, 0) scale(1.1);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(140px, 0) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes next-text {
+    50%, 55% {
+      transform: translate(0%, -390px);
+    }
+    to {
+      transform: translate(0%, -380px);
+    }
+  }
+  @keyframes next-top-arrow {
+    50% {
+      transform: translate(310px, 47px);
+    }
+  }
+  @keyframes next-bottom-arrow {
+    50% {
+      transform: translate(310px, -53px) rotate(180deg);
+    }
+  }
+  @keyframes next-image {
+    0% {
+      transform: translate(140px, 0) scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: translate(140px, 0) scale(1.1);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(140px, 0) scale(1);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+

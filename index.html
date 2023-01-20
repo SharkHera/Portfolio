@@ -10,55 +10,133 @@
         rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-    <label><input class="bubble" type="checkbox" name="dummy" value="on"></label>
-    <div class="ecran">
-        <div class="wrapper">
-            <div class="carte" data-tilt>
-                <img class="profil" src="./cute_shark.jpg" alt="cute shark">
+    <div class="presentation">
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!BOUTON MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <label><input class="bubble" type="checkbox" name="dummy" value="on"></label>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Menu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Trendy</a>
+            <a href="#">Location</a>
 
-                <div class="loader">
-                    <h2>CHARLES Emerson</h2>
+        </nav>
 
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CARTE PRÉSENTATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="ecran">
+            <div class="wrapper">
+                <div class="carte" data-tilt>
+                    <img class="profil" src="./cute_shark.jpg" alt="cute shark">
+
+                    <div class="loader">
+                        <h2>CHARLES Emerson</h2>
+
+                    </div>
+
+                    <p>Developper Junior <br>&<br>passioné de jeuxVidéo </p>
+                    <div class="reseau">
+                        <a href="https://fr.linkedin.com"> <img src="./—Pngtree—linkedin logo icon_3570311.png"
+                                alt="logo linkedin"></a>
+                        <a href="https://www.instagram.com/Sharky97211/?hl=fr"> <img src="./png-image.png"
+                                alt="logo insta"></a>
+                        <a href="https://www.facebook.com/CHARLESEmerson.972"> <img class="face" src="./face_logo.png"
+                                alt="logo facebook"></a>
+                        <a href="https://twitter.com/sharkman97211"> <img src="./twi_logo.png" alt="logo twitter"></a>
+                    </div>
+                    <a href="mailto:emerson.formation.cci@gmail.com" class="bouton">Contactez-Moi</a>
                 </div>
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ANIMATION bULLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
+                <div class="bulle"><span class="dot"></span></div>
 
-                <p>Developper Junior <br>&<br>passioné de jeuxVidéo </p>
-                <div class="reseau">
-                    <a href="https://fr.linkedin.com"> <img src="./—Pngtree—linkedin logo icon_3570311.png"
-                            alt="logo linkedin"></a>
-                    <a href="https://www.instagram.com/Sharky97211/?hl=fr"> <img src="./png-image.png"
-                            alt="logo insta"></a>
-                    <a href="https://www.facebook.com/CHARLESEmerson.972"> <img class="face" src="./face_logo.png"
-                            alt="logo facebook"></a>
-                    <a href="https://twitter.com/sharkman97211"> <img src="./twi_logo.png" alt="logo twitter"></a>
-                </div>
-                <a href="mailto:emerson.formation.cci@gmail.com" class="bouton">Contactez-Moi</a>
             </div>
-            <h1></h1>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-            <div class="bulle"><span class="dot"></span></div>
-
-
         </div>
-
-
+    </div>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SKILLS TAB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+   
+       
+        <div class="skills">
+            
+            
+            <h2>Skills</h2>
+            <div class="container__progressbars">
+                
+            <div class="progressbar">
+                <svg class="progressbar__svg">
+                    <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
+                </svg>
+                <span class="progressbar__text shadow-html">HTML</span>
+            </div>
+    
+            <div class="progressbar">
+                <svg class="progressbar__svg">
+                    <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-css shadow-css"> </circle>
+                </svg>
+                <span class="progressbar__text shadow-css">CSS</span>
+            </div>
+    
+    
+    
+            <div class="progressbar">
+                <svg class="progressbar__svg">
+                    <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-js shadow-js"> </circle>
+                </svg>
+                <span class="progressbar__text shadow-js">JavaScript</span>
+            </div>
+    
+            <div class="progressbar">
+                <svg class="progressbar__svg">
+                    <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-ts shadow-ts"> </circle>
+                </svg>
+                <span class="progressbar__text shadow-ts">PHP</span>
+            </div>
+    
+            <div class="progressbar">
+                <svg class="progressbar__svg">
+                    <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-node shadow-node"> </circle>
+                </svg>
+                <span class="progressbar__text shadow-node">C++</span>
+            </div>
+    
+            
+    </div>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Project Réalisés!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="project">
+        <div id="carousel-wrapper">
+            <div id="menu">
+                <div id="current-option">
+                  <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                  <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                </div>
+                <button id="previous-option"></button>
+                <button id="next-option"></button>
+              
+            </div>
+            <div id="image"></div>
+          </div>
+          <img src="./cute_turtle.png" alt="">
     </div>
 
+ 
 </body>
 <script src="./custom.js"></script>
 <script src="./vanilla-tilt.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 
 </html>
